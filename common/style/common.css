@@ -1,0 +1,700 @@
+/* common.css begin */
+body{
+    color: #222;
+    font-size: 14px;
+    font-family: "Microsoft Yahei";
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+body>header{
+    height: 165px;
+    margin-bottom: 30px;
+}
+#menuBtn{
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #cecece;
+    outline: 0;
+    background-color: #fff;
+    cursor: pointer;
+
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+#accountWrapper{
+    width: 130px;
+    height: 35px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+#accountBtn{
+    border: 0;
+    outline: 0;
+    padding: 0;
+    background-color: transparent;
+    color: #8f8f8f;
+    font-size: 12px;
+    cursor: pointer;
+}
+#accountBtn i:last-of-type{
+    display: none;
+}
+#accountBtn:hover{
+    color: #d9d9d9;
+}
+#account{
+    display: none;
+}
+#accountMenu{
+    width: 150px;
+    height: 80px;
+    list-style: none;
+    padding: 10px 20px;
+    position: absolute;
+    right: 50%;
+    margin: 10px -25px 0 0;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 3px rgba(0,0,0,0.4);
+    display: none;
+    background-color: #fff;
+    z-index: 1000;
+}
+#accountMenu:before, #accountMenu:after{
+    content: "";
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: 18px;
+}
+#accountMenu:before{
+    border-bottom: 18px solid #ddd;
+    margin-bottom: 2px;
+}
+#accountMenu:after{
+    border-bottom: 18px solid #fff;
+    margin-bottom: -1px;
+}
+#accountMenu>li{
+    height: 30px;
+    line-height: 29px;
+    text-align: left;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+}
+#accountMenu>li:last-of-type{
+    border-bottom: 0;
+}
+#accountMenu>li>button{
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+#accountMenu>li>button:hover{
+    color: #8f8f8f;
+}
+#hTop{
+    height: 90px;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+}
+#branding{
+    display: inline-block;
+    width: 280px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 40px;
+
+    z-index: 999;
+}
+#branding>h1{
+    font-size: 34px;
+    display: inline-block;
+    margin: 0;
+}
+#branding>i:first-of-type{
+    color: #008d52;
+    font-size: 34px;
+}
+#branding>i:last-of-type{
+    font-size: 12px;
+    position: relative;
+    top: -10px;
+}
+#branding:hover{
+    color: #666666;
+}
+#hMiddle{
+    height: 36px;
+    text-align: center;
+    line-height: 35px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+#hMiddle>div{
+    display: inline-block;
+}
+#weather{
+    position: absolute;
+    left: 20px;
+    font-size: 12px;
+}
+#group{
+    padding: 0 30px;
+    background-color: #006b3a;
+    color: #fff;
+}
+#school{
+    position: absolute;
+    right: 20px;
+    font-size: 12px;
+}
+#hBottom{
+    height: 41px;
+    font-size: 0;
+    text-align: center;
+    line-height: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+}
+#hBottom>nav{
+    width: 90%;
+    display: inline-block;
+}
+#hBottom>nav>ul{
+    height: 40px;
+    padding: 0;
+    list-style: none;
+}
+#hBottom>nav>ul>li{
+    width: 10%;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-indent: 2px;
+    display: inline-block;
+}
+#hBottom>nav>ul>li:first-of-type>a{
+    color: #8f8f8f;
+}
+#hBottom>nav>ul>li>a:hover{
+    color: #8f8f8f;
+}
+#hSearch{
+    width: 10%;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-indent: 2px;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    border-left: 1px solid #ddd;
+
+    z-index: 999;
+}
+#hSearchBtn{
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    padding: 0;
+    color: #8f8f8f;
+    cursor: pointer;
+}
+#hSearchBtn:hover{
+    color: #d9d9d9;
+}
+#hSearchBlock{
+    width: 300px;
+    height: 60px;
+    line-height: 58px;
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    margin-top: 15px;
+    margin-right: -20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 3px rgba(0,0,0,0.4);
+    display: none;
+    z-index: 1000;
+    background-color: #fff;
+}
+#hSearchBlock:before, #hSearchBlock:after{
+    content: "";
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: 100px;
+}
+#hSearchBlock:before{
+    border-bottom: 18px solid #ddd;
+    margin-bottom: 2px;
+}
+#hSearchBlock:after{
+    border-bottom: 18px solid #fff;
+    margin-bottom: -1px;
+}
+#hSearchText{
+    width: 270px;
+    height: 32px;
+    color: #a9a9a9;
+    box-sizing: border-box;
+    outline: 0;
+    border: 1px solid #a9a9a9;
+    padding: 5px 10px;
+}
+#hSearchSubmit{
+    display: none;
+}
+
+#banner{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    top: -50px;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 998;
+}
+#bMenuBtn{
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #cecece;
+    outline: 0;
+    background-color: #fff;
+    cursor: pointer;
+
+    position: absolute;
+    top: 5px;
+    left: 30px;
+
+    z-index: 999;
+}
+#bBranding{
+    display: inline-block;
+    width: 280px;
+    height: 40px;
+    line-height: 40px;
+
+    position: absolute;
+    top: 5px;
+    left: 60px;
+
+    z-index: 999;
+}
+#bBranding>h1{
+    font-size: 34px;
+    display: inline-block;
+    margin: 0;
+}
+#bBranding>i:first-of-type{
+    color: #008d52;
+    font-size: 34px;
+}
+#bBranding>i:last-of-type{
+    font-size: 12px;
+    position: relative;
+    top: -10px;
+}
+#bBranding:hover{
+    color: #666666;
+}
+#bSearch{
+    width: 130px;
+    line-height: 40px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-indent: 2px;
+    display: inline-block;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 5px;
+    right: 10px;
+
+    z-index: 999;
+}
+#bSearchBtn{
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    padding: 0;
+    color: #8f8f8f;
+    cursor: pointer;
+}
+#bSearchBtn:hover{
+    color: #d9d9d9;
+}
+#bSearchBlock{
+    width: 300px;
+    height: 60px;
+    line-height: 58px;
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    margin-top: 15px;
+    margin-right: -20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 3px rgba(0,0,0,0.4);
+    display: none;
+    z-index: 1000;
+    background-color: #fff;
+}
+#bSearchBlock:before, #bSearchBlock:after{
+    content: "";
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: 100px;
+}
+#bSearchBlock:before{
+    border-bottom: 18px solid #ddd;
+    margin-bottom: 2px;
+}
+#bSearchBlock:after{
+    border-bottom: 18px solid #fff;
+    margin-bottom: -1px;
+}
+#bSearchText{
+    width: 270px;
+    height: 32px;
+    color: #a9a9a9;
+    box-sizing: border-box;
+    outline: 0;
+    border: 1px solid #a9a9a9;
+    padding: 5px 10px;
+}
+#bSearchSubmit{
+    display: none;
+}
+
+#cover{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 998;
+    display: none;
+}
+#drawer{
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    background-color: #f9fafa;
+    z-index: 1000;
+}
+#drawerLogoWrapper{
+    height: 65px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+}
+#drawerLogo{
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+
+    transform: scale(0.9);
+}
+#drawerLogo>h1{
+    margin: 0;
+    display: inline-block;
+    font-size: 34px;
+}
+#drawerLogo>i{
+    position: relative;
+    top: -10px;
+}
+#drawerClose{
+    font-size: 40px;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    transform: rotate(45deg);
+    margin-left: 65px;
+    outline: 0;
+    cursor: pointer;
+}
+#dSearchWrapper{
+    height: 60px;
+}
+#dSearchWrapper>form{
+    height: 42px;
+}
+#dSearchWrapper>form>input{
+    height: 42px;
+    padding: 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#dSearchWrapper>form>input[type="text"]{
+    margin-left: 15px;
+    border-right: 0;
+    width: 230px;
+    padding-left: 10px;
+    outline: 0;
+    background-color: #fff;
+}
+#dSearchWrapper>form>input[type="submit"]{
+    width: 40px;
+    font-family: Fontawesome;
+    background-color: transparent;
+}
+#drawer>nav>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#drawer>nav>ul>li{
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    padding-left: 25px;
+    letter-spacing: 2px;
+}
+#drawer>nav>ul>li>a{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    display: inline-block;
+}
+#drawer>nav>ul>li:first-of-type a, #drawer>nav>ul>li>a:hover{
+    color: #8f8f8f;
+}
+#dAbout{
+    width: 230px;
+    margin: 0 auto;
+}
+#dAbout>p{
+    font-size: 12px;
+    text-align: center;
+}
+
+#login{
+    width: 400px;
+    height: 170px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -85px;
+    margin-left: -200px;
+    background-color: #f9fafa;
+    padding: 30px 0;
+    z-index: 1000;
+    display: none;
+}
+#login>header{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#login>header span{
+    color: #006b3a;
+    font-size: 30px;
+}
+#login form{
+    text-align: center;
+}
+#login form>div{
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+#login form label{
+    margin-right: 10px;
+    vertical-align: top;
+}
+#login form input[type="text"],
+#login form input[type="password"]{
+    width: 250px;
+    height: 30px;
+    outline: 0;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+#login form>div:last-of-type{
+    margin-bottom: 0;
+}
+#login form>div:last-of-type button{
+    height: 30px;
+    width: 80px;
+    border: 0;
+    outline: 0;
+    background-color: #006b3a;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-indent: 5px;
+    cursor: pointer;
+}
+#login form>div:last-of-type button:first-of-type{
+    margin-right: 30px;
+}
+
+#alert{
+    width: 400px;
+    height: 120px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -200px;
+    text-align: center;
+    background-color: #f9fafa;
+    padding: 30px 0;
+    z-index: 1000;
+    display: none;
+}
+#alert>header{
+    margin-bottom: 15px;
+}
+#alert>header span{
+    color: #006b3a;
+    font-size: 30px;
+}
+#alert>div{
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+#alert>div:last-of-type{
+    margin-bottom: 0;
+}
+#alert>div:last-of-type button{
+    height: 30px;
+    width: 80px;
+    border: 0;
+    outline: 0;
+    background-color: #006b3a;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-indent: 5px;
+    cursor: pointer;
+}
+
+#register{
+    width: 400px;
+    height: 430px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -215px;
+    margin-left: -200px;
+    background-color: #f9fafa;
+    padding: 30px 0;
+    z-index: 1000;
+    display: none;
+}
+#register>header{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#register>header span{
+    color: #006b3a;
+    font-size: 30px;
+}
+#register form{
+    text-align: center;
+}
+#register form>div{
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+#register form label{
+    margin-right: 10px;
+    vertical-align: top;
+}
+#register form input,
+#register form select,
+#register form textarea{
+    outline: 0;
+}
+#register form input[type="text"],
+#register form input[type="password"],
+#register form select{
+    width: 250px;
+    height: 30px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+#register form textarea{
+    width: 250px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+#register form>div:last-of-type{
+    margin-bottom: 0;
+}
+#register form>div:last-of-type button{
+    height: 30px;
+    width: 80px;
+    border: 0;
+    outline: 0;
+    background-color: #006b3a;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-indent: 5px;
+    cursor: pointer;
+}
+#register form>div:last-of-type button:first-of-type{
+    margin-right: 30px;
+}
+
+body>footer{
+    margin-top: 30px;
+    height: 250px;
+    background-color: #242424;
+    overflow: hidden;
+}
+#fLogo{
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#fLogo>i{
+    color: #008d52;
+    font-size: 50px;
+}
+#fLogo>i:hover{
+    color: #006b3a;
+}
+#fAbout{
+    height: 40px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+#fAbout>p{
+    margin: 0;
+    color: #6f6f6f;
+    text-align: center;
+}
+#fAbout>p:last-of-type{
+    display: none;
+}
+/* common.css end */

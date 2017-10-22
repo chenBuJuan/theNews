@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>theNews</title>
+    <link rel="stylesheet" href="../../node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../common/style/common.css">
+    <link rel="stylesheet" href="../style/list.css">
+</head>
+<body>
+    <header>
+        <button id="menuBtn">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div id="accountWrapper">
+            <button id="accountBtn">
+                <span>ACCOUNT</span>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                <i class="fa fa-minus" aria-hidden="true"></i>
+            </button>
+            <a href="user.html" id="account">
+                <span>
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </span>
+            </a>
+            <ul id="accountMenu">
+                <li>
+                    <button id="loginBtn">
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>
+                        <span>SIGN IN</span>
+                    </button>
+                </li>
+                <li>
+                    <button id="registerBtn">
+                        <i class="fa fa-registered" aria-hidden="true"></i>
+                        <span>REGISTER</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div id="hTop">
+            <a href="index.html" id="branding">
+                <i class="fa fa-gg" aria-hidden="true"></i>
+                <h1>theNews</h1>
+                <i class="fa fa-registered" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div id="hMiddle">
+            <div id="weather">
+                <i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i>
+                <span></span>
+            </div>
+            <div id="group">
+                <span>INFORMATION MANAGEMENT AND SYSTEM PROGRAM</span>
+            </div>
+            <div id="school">
+                <span>“NC UNIVERSITY”</span>
+            </div>
+        </div>
+        <div id="hBottom">
+            <nav>
+                <ul>
+                    <li><a href="list.html?type=top">头条</a></li>
+                    <li><a href="list.html?type=shehui">社会</a></li>
+                    <li><a href="list.html?type=guonei">国内</a></li>
+                    <li><a href="list.html?type=guoji">国际</a></li>
+                    <li><a href="list.html?type=yule">娱乐</a></li>
+                    <li><a href="list.html?type=tiyu">体育</a></li>
+                    <li><a href="list.html?type=junshi">军事</a></li>
+                    <li><a href="list.html?type=keji">科技</a></li>
+                    <li><a href="list.html?type=caijing">财经</a></li>
+                    <li><a href="list.html?type=shishang">时尚</a></li>
+                </ul>
+            </nav>
+            <div id="hSearch">
+                <button id="hSearchBtn">
+                    <span>搜索</span>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+                <form action="search.html" method="get">
+                    <div id="hSearchBlock">
+                        <input type="text" id="hSearchText" placeholder="搜索..." name="s">
+                        <input type="submit" id="hSearchSubmit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section id="banner">
+        <button id="bMenuBtn">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <a href="index.html" id="bBranding">
+            <i class="fa fa-gg" aria-hidden="true"></i>
+            <h1>theNews</h1>
+            <i class="fa fa-registered" aria-hidden="true"></i>
+        </a>
+        <div id="bSearch">
+            <button id="bSearchBtn">
+                <span>搜索</span>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+            <form action="search.html" method="get">
+                <div id="bSearchBlock">
+                    <input type="text" id="bSearchText" placeholder="搜索..." name="s">
+                    <input type="submit" id="bSearchSubmit">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="cover"></section>
+    <section id="drawer">
+        <div id="drawerLogoWrapper">
+            <a href="index.html" id="drawerLogo">
+                <h1>theNews</h1>
+                <i class="fa fa-registered" aria-hidden="true"></i>
+            </a>
+            <button id="drawerClose">+</button>
+        </div>
+        <div id="dSearchWrapper">
+            <form action="search.html" method="get">
+                <input type="text" id="dSearchTxt" placeholder="搜索..." name="s"><input type="submit" value="" id="dSearchSub">
+            </form>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="list.html?type=top">头条</a></li>
+                <li><a href="list.html?type=shehui">社会</a></li>
+                <li><a href="list.html?type=guonei">国内</a></li>
+                <li><a href="list.html?type=guoji">国际</a></li>
+                <li><a href="list.html?type=yule">娱乐</a></li>
+                <li><a href="list.html?type=tiyu">体育</a></li>
+                <li><a href="list.html?type=junshi">军事</a></li>
+                <li><a href="list.html?type=keji">科技</a></li>
+                <li><a href="list.html?type=caijing">财经</a></li>
+                <li><a href="list.html?type=shishang">时尚</a></li>
+            </ul>
+        </nav>
+        <div id="dAbout">
+            <p>
+                NanChang University Information Management And System Program 141<br>
+                Course design, 
+                <i class="fa fa-copyright" aria-hidden="true"></i>
+                Copyright 2017.
+            </p>
+        </div>
+    </section>
+    <section id="login">
+        <header>
+            <span>
+                <i class="fa fa-gg" aria-hidden="true"></i>
+            </span>
+        </header>
+        <form>
+            <div>
+                <label for="loginAcc">账号</label>
+                <input type="text" id="loginAcc" name="acc">
+            </div>
+            <div>
+                <label for="loginPsw">密码</label>
+                <input type="password" id="loginPsw" name="psw">
+            </div>
+            <div>
+                <button id="loginSubmit">登录</button>
+                <button id="loginClose">取消</button>
+            </div>
+        </form>
+    </section>
+    <section id="register">
+        <header>
+            <span>
+                <i class="fa fa-gg" aria-hidden="true"></i>
+            </span>
+        </header>
+        <form>
+            <div>
+                <label for="registerAcc">账号</label>
+                <input type="text" id="registerAcc" name="acc">
+            </div>
+            <div>
+                <label for="registerPsw">密码</label>
+                <input type="password" id="registerPsw" name="psw">
+            </div>
+            <div>
+                <label for="registerName">昵称</label>
+                <input type="text" id="registerName" name="name">
+            </div>
+            <div>
+                <label for="registerSex">性别</label>
+                <select name="registerSex" id="sex">
+                    <option value="m">男</option>
+                    <option value="w">女</option>
+                </select>
+            </div>
+            <div>
+                <label for="registerEmail">邮箱</label>
+                <input type="text" id="registerEmail" name="email">
+            </div>
+            <div>
+                <label for="registerMsg">简介</label>
+                <textarea name="registerMsg" id="msg"></textarea>
+            </div>
+            <div>
+                <button id="registerSubmit">注册</button>
+                <button id="registerClose">取消</button>
+            </div>
+        </form>
+    </section>
+    <section id="alert">
+        <header>
+            <span>
+                <i class="fa fa-gg" aria-hidden="true"></i>
+            </span>
+        </header>
+        <div>
+            <span>asdadsasd</span>
+        </div>
+        <div>
+            <button id="alertClose">确定</button>
+        </div>
+    </section>
+
+    <section id="content">
+        <!--
+        <div class="cell-imgs">
+            <a href="item.html?id=170927204722121">
+                <header>
+                    <h3>今天起，世界上再也没有国家不允许女性开车了！</h3>
+                </header>
+                <div class="img">
+                    <img src="http://06.imgmini.eastday.com/mobile/20170927/20170927204722_190d7de6b85277d9ae570af9377a41d3_2_mwpm_03200403.jpg">
+                    <img src="http://06.imgmini.eastday.com/mobile/20170927/20170927204722_190d7de6b85277d9ae570af9377a41d3_6_mwpm_03200403.jpg">
+                    <img src="http://06.imgmini.eastday.com/mobile/20170927/20170927204722_190d7de6b85277d9ae570af9377a41d3_5_mwpm_03200403.jpg">
+                </div>
+                <footer>
+                    <p>
+                        <span>亚太日报</span>
+                        <span>2017-09-27 20:47</span>
+                    </p>
+                </footer>
+            </a>
+        </div>
+        <div class="cell-img">
+            <a href="item.html?id=170927204722121">
+                <div class="img">
+                    <img src="http://06.imgmini.eastday.com/mobile/20170927/20170927204722_190d7de6b85277d9ae570af9377a41d3_5_mwpm_03200403.jpg">
+                </div>
+                <header>
+                    <h3>今天起，世界上再也没有国家不允许女性开车了！</h3>
+                </header>
+                <footer>
+                    <p>
+                        <span>亚太日报</span>
+                        <span>2017-09-27 20:47</span>
+                    </p>
+                </footer>
+            </a>
+        </div>
+        -->
+    </section>
+
+    <footer>
+        <div id="fLogo">
+            <i class="fa fa-gg" aria-hidden="true"></i>
+        </div>
+        <div id="fAbout">
+            <p>
+                NanChang University <br>
+                Information Management And System Program 141<br>
+                Course design, 
+                <i class="fa fa-copyright" aria-hidden="true"></i>
+                Copyright 2017.
+            </p>
+            <p>
+                <span>chen -.-</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../common/action/common.js"></script>
+    <script src="../action/list.js"></script>
+</body>
+</html>

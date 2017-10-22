@@ -1,0 +1,74 @@
+#content{
+    width: 70%;
+    margin: 0 auto;
+}
+#searchForm{
+    height: 40px;
+    margin-bottom: 15px;
+}
+#searchForm input{
+    height: 40px;
+    outline: 0;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+#searchForm form{
+    position: relative;
+}
+#searchForm form::before{
+    content: "\f002";
+    font-family: FontAwesome;
+    top: 6px;
+    left: 10px;
+    line-height: 2;
+    position: absolute;
+}
+#searchForm input[type="text"]{
+    width: 450px;
+    border: 1px solid #ddd;
+    padding: 0;
+    padding-left: 33px;
+}
+#searchForm input[type="submit"]{
+    width: 165px;
+    color: #006b3a;
+    border: 1px solid #006b3a;
+    background-color: #fff;
+    cursor: pointer;
+    letter-spacing: 5px;
+    text-indent: 5px;
+}
+#searchForm input[type="submit"]:hover{
+    color: #fff;
+    background-color: #006b3a;
+}
+#searchRes{
+    border-top: 2px solid #006b3a;
+}
+#searchRes>header{
+    color: #848484;
+    font-size: 16px;
+}
+#searchRes .searchCell{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+#searchRes .searchCell:last-of-type{
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+#searchRes .searchCell .img{
+    width: 33.333%;
+    margin-right: 20px;
+    float: left;
+}
+#searchRes .searchCell .img img{
+    width: 100%;
+    max-height: 200px;
+}
+#searchRes .searchCell::after{
+    content: '';
+    height: 20px;
+    display: block;
+    clear: both;
+}
